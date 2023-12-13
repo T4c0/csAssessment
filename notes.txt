@@ -1,0 +1,23 @@
+Here's a summary of the results:
+
+doublerInsert: Approximately 896.1608 milliseconds
+doublerAppend: Approximately 2.9461 milliseconds
+
+ In general, appending elements is more efficient because it involves less shifting of existing elements in the array.
+
+
+ 
+Examining the results for arrays of various sizes,
+it's clear that as the array size grows,
+the execution times for both doublerInsert and doublerAppend increase.
+However, the way they scale isn't the same.
+For doublerInsert, the execution time shows a substantial growth with larger arrays,
+indicating that this function struggles as the array gets bigger.
+Conversely, with doublerAppend, the execution time also rises but at a slower pace,
+hinting that this function handles larger arrays more efficiently.
+This aligns with the common understanding that adding elements to the end of an array
+is generally more adaptable than inserting them at the beginning,
+which involves shifting existing elements.
+In this specific comparison, it seems like doublerAppend performs better
+than doublerInsert across all array sizes, displaying noticeably shorter
+execution times, particularly as the array size increases.
